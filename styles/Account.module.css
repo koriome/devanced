@@ -1,0 +1,13 @@
+#silly{
+    width: 50px;
+    height: 50px;
+}
+
+.main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+

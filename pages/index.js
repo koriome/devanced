@@ -1,8 +1,20 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import {useSession, useSupabaseClient} from "@supabase/auth-helpers-react";
+import Account from "../components/account";
+
 
 export default function Home() {
+    const session = useSession()
+    const supabase = useSupabaseClient()
+
+    async function signInWithTwitch() {
+        const { data, error } = await supabase.auth.signInWithOAuth({
+            provider: 'twitch',
+        })
+    }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,22 +24,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Image
-        src="/devancedtemp.png"
-        height={116}
-        width={915}
-        alt="A temporary Devanced logo" />
-
-        <p className={styles.title}>is under construction!</p>
-
-        <p className={styles.description}>
-          view our progress <a
-            href="https://github.com/koriome/devanced"
-            target="_blank"
-            rel="noopener noreferrer"
-        >here!
-        </a>
-        </p>
+          {!session ? (
+              <button onClick={signInWithTwitch}>sign in with twitch... NOW!</button>
+          ) : (
+              <Account />
+          )}
       </main>
 
     </div>

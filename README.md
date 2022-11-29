@@ -2,7 +2,7 @@
 
 a website with the goal of making every minecraft streamer's lives worse.
 
-worked on by [koriome](https://korio.me) and [loganrithm](https://twitter.com/loganrithm). inspired by [affonic](https://twitch.tv/affonic)
+worked on by [koriome](https://korio.me) and [loganrithm](https://twitter.com/loganrithmlive). inspired by [affonic](https://twitch.tv/affonic)
 
 you can visit the website at https://devanced.korio.me although at the moment there isn't anything there.
 

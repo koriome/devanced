@@ -16,5 +16,5 @@ Goals:
 
 Short term to-dos:
 - figure out how databases work (help)
-- get twitch auth working
+- get twitch auth working (IN PROGRESS!)
 - create a button that does **something** in minecraft

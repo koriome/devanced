@@ -12,6 +12,9 @@ export default function Home() {
     async function signInWithTwitch() {
         const { data, error } = await supabase.auth.signInWithOAuth({
             provider: 'twitch',
+            options: {
+                redirectTo: window.location.origin
+            },
         })
     }
 

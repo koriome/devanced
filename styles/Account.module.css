@@ -1,6 +1,7 @@
-#silly{
-    width: 50px;
-    height: 50px;
+#pfp{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
 }
 
 .main {
@@ -11,3 +12,9 @@
     align-items: center;
 }
 
+.userdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

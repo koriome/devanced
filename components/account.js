@@ -45,12 +45,12 @@ export default function Account({ session }) {
     }
 
     return (
-        <div className={styles.main}>
-            <p> this is the account page </p>
-            <p>your username is {username}</p>
-            <img id={styles.silly} src={avatar_url} />
-            <p>i'm counting having all this as a success</p>
-            <button className={styles.buttonsilly} onClick={signOutPlease}>sign me out!</button>
+        <div>
+            <div className={styles.userdiv}>
+                <img id={styles.pfp} src={avatar_url} />
+                <h1>Hey there, {username}!</h1>
+                <button className={styles.buttonsilly} onClick={signOutPlease}>sign me out!</button>
+            </div>
         </div>
     )
 }
